@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { createTRPCProxyClient, httpBatchLink } from "@trpc/client";
-import type { AppRouter } from "@server/routers";
+import type { AppRouter } from "@server/types";
 import { useEffect } from "react";
 
 const client = createTRPCProxyClient<AppRouter>({
